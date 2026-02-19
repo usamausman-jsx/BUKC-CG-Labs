@@ -137,6 +137,16 @@ void myDisplay(void)
         glVertex2f(0.0, -300.0);   // Bottom end
         glVertex2f(0.0,  300.0);   // Top end
     glEnd();
+    
+    
+//    glColor3f(0.7, 0.1, 0.7);  // Light gray
+//    glBegin(GL_LINES);
+//        glVertex2f(-250.0, 0.0);   // Left end
+//        glVertex2f( 0.0, 400.0);   // Right end
+//    glEnd();
+    
+    
+    
 
 
     // ========================================================================
@@ -160,7 +170,7 @@ void myDisplay(void)
             - We divide by pi to keep amplitude manageable
             */
             float xRad = x / 50.0;       // Convert pixels to radians range
-            float y = sin(xRad) * 100.0; // Scale amplitude to 100 pixels
+            float y = sin(xRad) * 150.0; // Scale amplitude to 100 pixels
 
             glVertex2f(x, y);
 
