@@ -279,13 +279,8 @@ void DrawCloud(float cx, float cy, float size)
     */
     
     // Draw several overlapping filled circles with white color
-    glColor3f(1.0, 1.0, 1.0);  // White fill
+//    glColor3f(1.0, 1.0, 1.0);  // White fill
     
-    DrawFilledCircle(cx - size*0.5, cy, size*0.6, 50);
-    DrawFilledCircle(cx, cy + size*0.2, size*0.7, 50);
-    DrawFilledCircle(cx + size*0.5, cy, size*0.6, 50);
-    DrawFilledCircle(cx + size*0.2, cy - size*0.2, size*0.5, 50);
-    DrawFilledCircle(cx - size*0.2, cy - size*0.2, size*0.5, 50);
     
     // Draw outline
     glColor3f(0.5, 0.5, 0.5);  // Gray outline
@@ -294,6 +289,15 @@ void DrawCloud(float cx, float cy, float size)
     DrawCircle(cx + size*0.5, cy, size*0.6, 50);
     DrawCircle(cx + size*0.2, cy - size*0.2, size*0.5, 50);
     DrawCircle(cx - size*0.2, cy - size*0.2, size*0.5, 50);
+    
+    
+    glColor3f(0.8, 0.5, 0.5);
+    
+    DrawFilledCircle(cx - size*0.5, cy, size*0.6, 50);
+    DrawFilledCircle(cx, cy + size*0.2, size*0.7, 50);
+    DrawFilledCircle(cx + size*0.5, cy, size*0.6, 50);
+    DrawFilledCircle(cx + size*0.2, cy - size*0.2, size*0.5, 50);
+    DrawFilledCircle(cx - size*0.2, cy - size*0.2, size*0.5, 50);
 }
 
 
